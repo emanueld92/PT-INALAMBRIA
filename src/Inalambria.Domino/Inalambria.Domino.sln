@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.Api", "Inalambria.Domino.Api\Inalambria.Domino.Api.csproj", "{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.Core", "Inalambria.Domino.Core\Inalambria.Domino.Core.csproj", "{6B400819-4071-4D07-8948-21B346A3B3B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.EntityFramework", "Inalambria.Domino.EntityFramework\Inalambria.Domino.EntityFramework.csproj", "{27B60ECE-03CB-42F5-B511-2406984C231C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.ApplicationServices", "Inalambria.Domino.ApplicationServices\Inalambria.Domino.ApplicationServices.csproj", "{D174CCD5-6024-4C56-93D8-7061449ED998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.ApplicationServices.Shared", "Inalambria.Domino.ApplicationServices.Shared\Inalambria.Domino.ApplicationServices.Shared.csproj", "{2E964842-CD3C-4653-93AD-8594E4A10342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B400819-4071-4D07-8948-21B346A3B3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B400819-4071-4D07-8948-21B346A3B3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B400819-4071-4D07-8948-21B346A3B3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B400819-4071-4D07-8948-21B346A3B3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B60ECE-03CB-42F5-B511-2406984C231C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B60ECE-03CB-42F5-B511-2406984C231C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B60ECE-03CB-42F5-B511-2406984C231C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B60ECE-03CB-42F5-B511-2406984C231C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D174CCD5-6024-4C56-93D8-7061449ED998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D174CCD5-6024-4C56-93D8-7061449ED998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D174CCD5-6024-4C56-93D8-7061449ED998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D174CCD5-6024-4C56-93D8-7061449ED998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E964842-CD3C-4653-93AD-8594E4A10342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E964842-CD3C-4653-93AD-8594E4A10342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E964842-CD3C-4653-93AD-8594E4A10342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E964842-CD3C-4653-93AD-8594E4A10342}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9B53D27-4011-4732-B4DB-B76C207ACF2B}
+	EndGlobalSection
+EndGlobal
