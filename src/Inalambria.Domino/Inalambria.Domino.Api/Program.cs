@@ -1,3 +1,5 @@
+using Inalambria.Domino.Api.Auth;
+using Inalambria.Domino.Api.Data;
 using Inalambria.Domino.Core.Authentication;
 using Inalambria.Domino.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -18,7 +20,7 @@ var configuration = builder.Configuration;
 
 builder.Services.AddDbContext<DominoDbContext>(options =>
                                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-//options.UseInMemoryDatabase(databaseName: "test"));
+                                //options.UseInMemoryDatabase(databaseName: "test"));
 
 
 builder.Services.AddIdentity<User, Role>(
@@ -93,7 +95,21 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+
+
+
+
+builder.Services.AddTransient<IJwtIssuerOptions, JwtIssuerFactory>();
 builder.Services.AddSingleton<IConfiguration>(configuration);
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
 
 
 var app = builder.Build();
@@ -101,12 +117,14 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseExceptionHandler("/error");
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.InitDb();
 }
 
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();

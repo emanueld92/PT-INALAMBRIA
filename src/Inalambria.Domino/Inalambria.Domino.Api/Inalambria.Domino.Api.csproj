@@ -25,12 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Inalambria.Domino.ApplicationServices.Shared\Inalambria.Domino.ApplicationServices.Shared.csproj" />
     <ProjectReference Include="..\Inalambria.Domino.Core\Inalambria.Domino.Core.csproj" />
     <ProjectReference Include="..\Inalambria.Domino.EntityFramework\Inalambria.Domino.EntityFramework.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
