@@ -1,5 +1,6 @@
 using Inalambria.Domino.Api.Auth;
 using Inalambria.Domino.Api.Data;
+using Inalambria.Domino.ApplicationServices.Ordering;
 using Inalambria.Domino.Core.Authentication;
 using Inalambria.Domino.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -91,6 +92,8 @@ builder.Services.AddAuthentication(options =>
             ValidIssuer = tokenValidationSettings.ValidIssuer,
             ValidAudience = tokenValidationSettings.ValidAudience,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenValidationSettings.SecretKey)),
+            //ValidateIssuer=false,
+            //ValidateAudience=false,
             ClockSkew = TimeSpan.Zero
         };
     });
@@ -101,6 +104,11 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddTransient<IJwtIssuerOptions, JwtIssuerFactory>();
 builder.Services.AddSingleton<IConfiguration>(configuration);
+
+builder.Services.AddTransient<IDominoServices, DominoServices>();
+
+
+
 
 
 builder.Services.AddCors(options =>
@@ -125,6 +133,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

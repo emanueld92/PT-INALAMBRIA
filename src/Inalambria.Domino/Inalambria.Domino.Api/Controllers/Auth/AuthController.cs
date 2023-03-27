@@ -15,7 +15,7 @@ namespace Inalambria.Domino.Api.Controllers.Auth
     [ApiController]
     public class AuthController : ControllerBase
     {
-        #region Constructor
+       
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
@@ -34,10 +34,9 @@ namespace Inalambria.Domino.Api.Controllers.Auth
             _jwtSettings = jwtConfig.Value;
             _jwtOptions = jwtOptions;
         }
-        #endregion
+    
 
-
-        #region Login/Logout
+       
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto model)
         {
@@ -66,11 +65,11 @@ namespace Inalambria.Domino.Api.Controllers.Auth
 
         }
 
-        #endregion
+      
 
 
 
-        #region Jwt
+        
         private async Task<string> CreateJwtTokenAsync(User user)
         {
 
@@ -133,6 +132,6 @@ namespace Inalambria.Domino.Api.Controllers.Auth
 
             return result;
         }
-        #endregion
+      
     }
 }

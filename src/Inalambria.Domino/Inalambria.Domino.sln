@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.Api", "Inalambria.Domino.Api\Inalambria.Domino.Api.csproj", "{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.Api", "Inalambria.Domino.Api\Inalambria.Domino.Api.csproj", "{3E3F75C6-A315-4B38-B177-F7BA10F87D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.Core", "Inalambria.Domino.Core\Inalambria.Domino.Core.csproj", "{6B400819-4071-4D07-8948-21B346A3B3B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.Core", "Inalambria.Domino.Core\Inalambria.Domino.Core.csproj", "{6B400819-4071-4D07-8948-21B346A3B3B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.EntityFramework", "Inalambria.Domino.EntityFramework\Inalambria.Domino.EntityFramework.csproj", "{27B60ECE-03CB-42F5-B511-2406984C231C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.EntityFramework", "Inalambria.Domino.EntityFramework\Inalambria.Domino.EntityFramework.csproj", "{27B60ECE-03CB-42F5-B511-2406984C231C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.ApplicationServices", "Inalambria.Domino.ApplicationServices\Inalambria.Domino.ApplicationServices.csproj", "{D174CCD5-6024-4C56-93D8-7061449ED998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.ApplicationServices", "Inalambria.Domino.ApplicationServices\Inalambria.Domino.ApplicationServices.csproj", "{D174CCD5-6024-4C56-93D8-7061449ED998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inalambria.Domino.ApplicationServices.Shared", "Inalambria.Domino.ApplicationServices.Shared\Inalambria.Domino.ApplicationServices.Shared.csproj", "{2E964842-CD3C-4653-93AD-8594E4A10342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.ApplicationServices.Shared", "Inalambria.Domino.ApplicationServices.Shared\Inalambria.Domino.ApplicationServices.Shared.csproj", "{2E964842-CD3C-4653-93AD-8594E4A10342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoServicesTest", "DominoServicesTest\DominoServicesTest.csproj", "{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2E964842-CD3C-4653-93AD-8594E4A10342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E964842-CD3C-4653-93AD-8594E4A10342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E964842-CD3C-4653-93AD-8594E4A10342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
