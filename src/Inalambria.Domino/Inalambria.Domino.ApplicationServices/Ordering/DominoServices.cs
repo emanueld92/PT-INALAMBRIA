@@ -127,5 +127,7 @@ namespace Inalambria.Domino.ApplicationServices.Ordering
            
             return (listaValid, ok);
         }
+
+      
     }
 }
