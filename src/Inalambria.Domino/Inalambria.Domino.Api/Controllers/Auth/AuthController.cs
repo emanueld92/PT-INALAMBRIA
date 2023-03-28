@@ -11,6 +11,9 @@ using System.Text;
 
 namespace Inalambria.Domino.Api.Controllers.Auth
 {
+
+
+
     [Route("v1/controltower/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase

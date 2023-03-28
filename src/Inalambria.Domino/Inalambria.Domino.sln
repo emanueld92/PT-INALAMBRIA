@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.Applicati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inalambria.Domino.ApplicationServices.Shared", "Inalambria.Domino.ApplicationServices.Shared\Inalambria.Domino.ApplicationServices.Shared.csproj", "{2E964842-CD3C-4653-93AD-8594E4A10342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoServicesTest", "DominoServicesTest\DominoServicesTest.csproj", "{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominoServicesTest", "DominoServicesTest\DominoServicesTest.csproj", "{E845F2BE-1BF9-4250-9009-2BE162F6D2DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
