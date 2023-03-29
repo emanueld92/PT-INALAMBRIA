@@ -20,7 +20,9 @@ var configuration = builder.Configuration;
 //DBContext
 
 builder.Services.AddDbContext<DominoDbContext>(options =>
-                                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                                options.UseSqlServer(configuration.GetConnectionString("DockerDb")));
+                                
+                                //options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
                                 //options.UseInMemoryDatabase(databaseName: "test"));
 
 
@@ -119,6 +121,9 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader());
 });
 
+var db= builder.Services.BuildServiceProvider().GetService<DominoDbContext>();
+
+db.Database.Migrate();
 
 var app = builder.Build();
 
@@ -130,6 +135,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.InitDb();
 }
+
+//migrate
+
 
 app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();

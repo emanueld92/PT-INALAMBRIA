@@ -10,25 +10,6 @@ namespace Inalambria.Domino.Api.Controllers.Domino
 
     [Route("api/[controller]")]
     [ApiController]
-    /// <summary>
-    /// Creates a TodoItem.
-    /// </summary>
-    /// <param userName="item"></param>
-    /// <param password="item"></param>
-    /// <returns>A newly created TodoItem</returns>
-    /// <remarks>
-    /// Sample request:
-    ///
-    ///     POST /Todo
-    ///     {
-    ///        "id": 1,
-    ///        "name": "Item #1",
-    ///        "isComplete": true
-    ///     }
-    ///
-    /// </remarks>
-    /// <response code="201">Returns the newly created item</response>
-    /// <response code="400">If the item is null</response>
     public class DominoController : ControllerBase
     {
 
@@ -59,7 +40,7 @@ namespace Inalambria.Domino.Api.Controllers.Domino
             }
             else
             {
-                return StatusCode(StatusCodes.Status406NotAcceptable, new { message = "Error: Conjuto de fichas no validas" });
+                return StatusCode(StatusCodes.Status406NotAcceptable, new { message = "Error: Conjunto de fichas no validas" });
             } 
 
         }

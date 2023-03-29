@@ -1,0 +1,36 @@
+version: '3.4'
+
+networks:
+  dominonetworks:
+  #Api
+services:
+#Db Domino
+  domino-database:
+        container_name: domino-db-server
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        ports:
+          - "8002:1433"
+        environment: 
+          ACCEPT_EULA: "Y"
+          SA_PASSWORD: "Domino@1234#"
+        networks:
+            - dominonetworks
+  inalambria.domino.api:
+    image: ${DOCKER_REGISTRY-}inalambriadominoapi
+    build:
+      context: .
+      dockerfile: Inalambria.Domino.Api/Dockerfile
+    depends_on: 
+            - domino-database
+    ports:
+          - "5014:80"
+          - "732:443"
+    restart: always
+        
+    environment: 
+          - DB_HOST=Domino-database
+          - DB_NAME=DominoDb
+          - DB_SA_PASSWORD=Domino@1234#
+          - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+          - dominonetworks
